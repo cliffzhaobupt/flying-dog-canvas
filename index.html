@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flying Dog</title>
+  <style type="text/css">
+   .wrapper {
+    position: relative;
+    width: 480px;
+    background: url(images/bg.jpg);
+    margin: 20px auto;
+    box-shadow: 0 0 15px #ccc;
+   }
+
+   .gameover {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 480px;
+    text-align: center;
+   }
+
+   .gameover a {
+    color: #000;
+   }
+
+   .score {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+   }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <canvas id="canvas" width="480" height="800"></canvas>
+    <div class="gameover" id="gameOver">
+      <h2>Game Over</h2>
+      <h4>Your Score: <span id="gameOverScore"></span></h4>
+      <h4><a href="javascript:location.reload();">Replay</a></h4>
+    </div>
+    <h1 class="score" id="score">0</h1>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
