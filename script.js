@@ -47,7 +47,7 @@ canvas.addEventListener('click', function(event) {
   } else {
     dog.vx = 2;
   }
-  dog.vy -= 5;
+  dog.vy = -3;
 }, false);
 
 // Load images and draw the canvas
